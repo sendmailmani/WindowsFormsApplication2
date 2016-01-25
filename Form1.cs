@@ -23,6 +23,12 @@ namespace WindowsFormsApplication2
             load();
         }
 
+        /// <summary>
+        /// This method is used to copied all files and directory source to destionation
+        /// manually
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="target"></param>
         public static void CopyAll(DirectoryInfo source, DirectoryInfo target)
         {
             Directory.CreateDirectory(target.FullName);
@@ -43,6 +49,10 @@ namespace WindowsFormsApplication2
             }
         }
 
+        /// <summary>
+        /// This method is used create directory and copiced all file and sub directory source to
+        /// destination using zip
+        /// </summary>
         public void load()
         {
             DirectoryInfo sourceDirectory = new DirectoryInfo(@"D:\Test");
